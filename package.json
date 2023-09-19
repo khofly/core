@@ -1,0 +1,47 @@
+{
+  "name": "@khofly/core",
+  "version": "1.8.4",
+  "private": false,
+  "author": "cufta22",
+  "license": "MIT",
+  "description": "Khofly shared code",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.es.js",
+  "homepage": "https://khofly.com",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "files": [
+    "dist"
+  ],
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khofly/core.git"
+  },
+  "bugs": {
+    "url": "https://github.com/khofly/core/issues"
+  },
+  "devDependencies": {
+    "@babel/core": "7.22.19",
+    "@babel/preset-env": "7.22.15",
+    "@babel/preset-typescript": "7.22.15",
+    "@rollup/plugin-babel": "6.0.3",
+    "@rollup/plugin-commonjs": "^25.0.4",
+    "@rollup/plugin-node-resolve": "15.2.1",
+    "@rollup/plugin-terser": "0.4.3",
+    "@rollup/plugin-typescript": "11.1.3",
+    "babel-loader": "9.1.3",
+    "rollup": "3.29.2",
+    "rollup-plugin-dts": "6.0.2",
+    "tslib": "2.6.2",
+    "typescript": "5.2.2"
+  },
+  "dependencies": {
+    "shrink-string": "^3.1.7"
+  }
+}
