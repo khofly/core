@@ -1,10 +1,15 @@
-import { decompress } from "shrink-string";
+import { ungzip } from "pako";
 
-export const decompressResponse = async (arr: string[]): Promise<string[]> => {
+const decompress = (s: string = ""): string => {
+  var enc = new TextEncoder();
+  return ungzip(enc.encode(s)).toString();
+};
+
+export const decompressResponse = (arr: string[]): string[] => {
   const decompressed = [];
 
   for (const min of arr) {
-    const d = await decompress(min);
+    const d = decompress(min);
     decompressed.push(d);
   }
 

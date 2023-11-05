@@ -10,11 +10,11 @@ export const KHOFLY_APPS: IKhoflyApp[] = [
     icon: "https://docs.khofly.com/assets/logo.svg",
     url: "https://docs.khofly.com",
   },
-  {
-    name: "Meet",
-    icon: "https://meet.khofly.com/assets/logo.svg",
-    url: "https://meet.khofly.com",
-  },
+  // {
+  //   name: "Meet",
+  //   icon: "https://meet.khofly.com/assets/logo.svg",
+  //   url: "https://meet.khofly.com",
+  // },
   //   {
   //     name: "Kanban",
   //     icon: "https://kanban.khofly.com/assets/logo.svg",

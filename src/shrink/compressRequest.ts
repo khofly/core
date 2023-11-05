@@ -1,10 +1,14 @@
-import { compress } from "shrink-string";
+import { gzip } from "pako";
 
-export const compressRequest = async (arr: string[]): Promise<string[]> => {
+const compress = (s: string = ""): string => {
+  return gzip(s).toString();
+};
+
+export const compressRequest = (arr: string[]): string[] => {
   const compressed = [];
 
   for (const unmin of arr) {
-    const c = await compress(unmin);
+    const c = compress(unmin);
     compressed.push(c);
   }
 
